@@ -1,13 +1,19 @@
 import './App.css';
-import HomePage from './HomePage';
-import NavigationBar from './NavigationBar';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Weather from './Weather';
+
+function Header() {
+  return (
+    <header>
+      <h1>Weather App</h1>
+    </header>
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <NavigationBar />
-      <HomePage />
+      <Header />
+      <Weather />
     </div>
   );
 }
